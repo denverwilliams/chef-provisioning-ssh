@@ -178,7 +178,7 @@ class Chef
         def wait_for_transport(action_handler, ssh_machine, machine_spec, machine_options)
           time_elapsed = 0
           sleep_time = 10
-          max_wait_time = 120
+          max_wait_time = 1200
           transport = transport_for(ssh_machine)
           unless transport.available?
             if action_handler.should_perform_actions
